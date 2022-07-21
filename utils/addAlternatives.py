@@ -1,7 +1,7 @@
 import os
 
 def addAlternatives():
-    os.system('cls')
+    os.system("cls")
 
     alternativesList = []
     alternativesCount = int(input("Enter the number of alternatives: "))
