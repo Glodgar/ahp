@@ -14,6 +14,6 @@ def calculateCriteriaFactors(criteriaCount, criteriaMatrix):
     criteriaFactorsSum = sum(criteriaFactors)
 
     for i in range(criteriaCount):
-        criteriaFactors[i] = criteriaFactors/criteriaFactorsSum*criteriaCount
+        criteriaFactors[i] = criteriaFactors[i]/criteriaFactorsSum*criteriaCount
     
     return criteriaFactors
