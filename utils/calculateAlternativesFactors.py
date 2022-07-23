@@ -10,14 +10,14 @@ def calculateAlternativesFactors(criteriaCount, alternativesCount, alternativesM
             for j in range(alternativesCount):
                 alternativesFactors[k][i] *= round(alternativesMatrix[k][i][j], 3)
             alternativesFactors[k][i] = round(alternativesFactors[k][i] ** (1/alternativesCount), 3)
-    
+
     alternativesFactorsSum = []
 
     for i in range(criteriaCount):
         alternativesFactorsSum.append(round(sum(alternativesFactors[i]), 3))
-    
+
     for i in range(criteriaCount):
         for j in range(alternativesCount):
-            alternativesFactors[i][j] = round(alternativesFactors[i][j]/alternativesFactorsSum[i]/alternativesCount, 3)
+            alternativesFactors[i][j] = round(alternativesFactors[i][j]/alternativesFactorsSum[i]*alternativesCount, 3)
     
     return alternativesFactors

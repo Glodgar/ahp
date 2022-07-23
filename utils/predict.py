@@ -1,6 +1,6 @@
 import os
 
-def predict(criteriaCount, alternativesCount, criteriaFactors, alternativesFactors, alternativesList):
+def predict(criteriaCount, alternativesCount, criteriaFactors, alternativesFactors):
     os.system("cls")
 
     ratingsValues = []

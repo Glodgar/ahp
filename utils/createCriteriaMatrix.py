@@ -12,6 +12,7 @@ def createCriteriaMatrix(criteriaCount, criteriaList):
             if i<j:
                 if not criteriaList[i]==criteriaList[j]:
                     os.system('cls')
+                    
                     print(criteriaList[i], "vs", criteriaList[j])
                     print("-9", criteriaList[j], "extremely preferred than", criteriaList[i])
                     print("-7", criteriaList[j], "very strong preferred than", criteriaList[i])
