@@ -34,4 +34,5 @@ def createCriteriaMatrix(criteriaCount, criteriaList):
 
             elif i==j:
                 criteriaMatrix[i][j]=1
+                
     return criteriaMatrix

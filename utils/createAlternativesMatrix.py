@@ -35,5 +35,6 @@ def createAlternativesMatrix(criteriaCount, alternativesCount, criteriaList, alt
                             alternativesMatrix[k][j][i] = 1/fabs(value)
                 elif i==j:
                     alternativesMatrix[k][j][j] = 1
+                    
     return alternativesMatrix
 

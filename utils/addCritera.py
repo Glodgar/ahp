@@ -10,8 +10,6 @@ def addCritera():
         element = input("Enter criterium: ")
 
         criteriaList.append(element)
-    
-    print(criteriaList)
 
     return criteriaCount, criteriaList
 

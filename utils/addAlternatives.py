@@ -11,6 +11,4 @@ def addAlternatives():
 
         alternativesList.append(element)
 
-    print(alternativesList)
-
     return alternativesCount, alternativesList
