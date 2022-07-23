@@ -26,11 +26,11 @@ def createCriteriaMatrix(criteriaCount, criteriaList):
                     value = int(input("Enter value: "))
 
                     if(value<0):
-                        criteriaMatrix[i][j]=1/fabs(value)
-                        criteriaMatrix[j][i]=fabs(value)
+                        criteriaMatrix[i][j] = round(1/fabs(value), 3)
+                        criteriaMatrix[j][i] = fabs(value)
                     else:
-                        criteriaMatrix[i][j]=fabs(value)
-                        criteriaMatrix[j][i]=1/fabs(value)
+                        criteriaMatrix[i][j] = fabs(value)
+                        criteriaMatrix[j][i] = round(1/fabs(value), 3)
 
             elif i==j:
                 criteriaMatrix[i][j]=1

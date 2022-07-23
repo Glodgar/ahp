@@ -14,3 +14,18 @@ criteriaFactors = calculateCriteriaFactors(criteriaCount, criteriaMatrix)
 alternativesMatrix = createAlternativesMatrix(criteriaCount, alternativesCount, criteriaList, alternativesList)
 alternativesFactors = calculateAlternativesFactors(criteriaCount, alternativesCount, alternativesMatrix)
 prediction = predict(criteriaCount, alternativesCount, criteriaFactors, alternativesFactors, alternativesList)
+
+print("criteriaCount", criteriaCount)
+print("alternativesCount", alternativesCount)
+
+print("criteriaList", criteriaList)
+print("alternativesList", alternativesList)
+
+print("criteriaMatrix", criteriaMatrix)
+print("alternativesMatrix", alternativesMatrix)
+
+print("criteriaFactors", criteriaFactors)
+print("alternativesFactors", alternativesFactors)
+
+for i in range(alternativesCount):
+    print(alternativesList[i], ":", prediction[i])

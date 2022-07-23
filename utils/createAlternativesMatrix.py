@@ -28,11 +28,11 @@ def createAlternativesMatrix(criteriaCount, alternativesCount, criteriaList, alt
                         value = int(input("Enter value: "))
 
                         if value<0:
-                            alternativesMatrix[k][i][j] = 1/fabs(value)
+                            alternativesMatrix[k][i][j] = round(1/fabs(value), 3)
                             alternativesMatrix[k][j][i] = fabs(value)
                         else:
                             alternativesMatrix[k][i][j] = fabs(value)
-                            alternativesMatrix[k][j][i] = 1/fabs(value)
+                            alternativesMatrix[k][j][i] = round(1/fabs(value), 3)
                 elif i==j:
                     alternativesMatrix[k][j][j] = 1
                     

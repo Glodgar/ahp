@@ -8,12 +8,12 @@ def calculateCriteriaFactors(criteriaCount, criteriaMatrix):
 
     for i in range(criteriaCount):
         for j in range(criteriaCount):
-            criteriaFactors[i] *= criteriaMatrix[i][j]
-        criteriaFactors[i] = criteriaFactors[i]**(1/criteriaCount)
+            criteriaFactors[i] *= round(criteriaMatrix[i][j], 3)
+        criteriaFactors[i] = round(criteriaFactors[i]**(1/criteriaCount), 3)
 
-    criteriaFactorsSum = sum(criteriaFactors)
+    criteriaFactorsSum = round(sum(criteriaFactors), 3)
 
     for i in range(criteriaCount):
-        criteriaFactors[i] = criteriaFactors[i]/criteriaFactorsSum*criteriaCount
+        criteriaFactors[i] = round(criteriaFactors[i]/criteriaFactorsSum*criteriaCount, 3)
     
     return criteriaFactors
